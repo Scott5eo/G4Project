@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Mon May 21 06:14:43 2018
+A class for evaporation rate calculation.
 psychropy calculations author: remcmurry (https://github.com/remcmurry/Psychropy)
+Other methods were created by Saksham, editted by Scott.
 @author Saksham, Scott
 """
 
