@@ -17,3 +17,7 @@ A = Pool Surface Area (ft2)
 W = Wind Speed Above Pool (mph)
 P = Water's Vapor Pressure (mmHG) at Ambient Temperature
 T = Temperature (°F)
+
+
+Dependencies:
+Weather-api: pip install weather-api
