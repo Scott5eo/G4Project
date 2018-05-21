@@ -62,9 +62,9 @@ class evaporation(object):
         maxSat = c1 *Pws /(101.3*1000-Pws)
         return maxSat
     
-    def getERate(self,Tdb,RH,v,A):
-        ec = 25 + 19*v
-        self.Erate = ec * A * (self.getMaxSat(Tdb)-self.getHR(Tdb,RH))
-        return self.Erate
+    def getERate(self,Tdb,RH,v,A): #kg of water / hour
+        ec = 25 + 19 * float(v)
+        self.Erate = ec * A * (self.getMaxSat(float(Tdb))-self.getHR(float(Tdb),float(RH))) 
+        return int(self.Erate)
 
 
