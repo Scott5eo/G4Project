@@ -10,13 +10,22 @@ Code:
 An api handling class that deals with the Yahoo Weather API.
 A main class that calculates the water evaporated using weather information.
 
-Equation used to estimate the evaporation rate will be the US EPA evaporation equation:
-E = 7.4PA(0.447W)^0.78 / (T + 459.67), where 
-E = Evaporation Rate (Gallons/Day)
-A = Pool Surface Area (ft2)
-W = Wind Speed Above Pool (mph)
-P = Water's Vapor Pressure (mmHG) at Ambient Temperature
-T = Temperature (°F)
+Equation used to estimate the evaporation rate will be:
+gh = Θ A (xs - x)
+
+where
+gh = amount of evaporated water per hour (kg/h)
+
+Θ = (25 + 19 v) = evaporation coefficient (kg/m2h)
+
+v = velocity of air above the water surface (m/s)
+
+A = water surface area (m2)
+
+xs = maximum humidity ratio of saturated air at the same temperature as the water surface (kg/kg)  (kg H2O in kg Dry Air)
+
+x = humidity ratio air (kg/kg) (kg H2O in kg Dry Air)
+SOURCE: https://www.engineeringtoolbox.com/evaporation-water-surface-d_690.html
 
 
 Dependencies:
