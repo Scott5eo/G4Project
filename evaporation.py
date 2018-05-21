@@ -3,7 +3,7 @@
 """
 Created on Mon May 21 06:14:43 2018
 psychropy calculations author: remcmurry (https://github.com/remcmurry/Psychropy)
-@author Scott
+@author Saksham, Scott
 """
 
 import math
