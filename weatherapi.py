@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Weather API handler using Yahoo Weather API and API wrapper (Open Weather Map)
-Created on Sat May 19 19:26:40 2018
-@author: Scott
+Weather API handler using Yahoo Weather API and API wrapper.
+
+@author: Ushir, Scott
 """
 from weather import Weather, Unit
 
