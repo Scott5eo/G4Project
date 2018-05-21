@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Weather API handler using Yahoo Weather API and API wrapper (Open Weather Map)
-Created on Sat May 19 19:26:40 2018
 
 @author: Scott
 """
@@ -18,4 +17,14 @@ class locationWeather(object):
     def getWeather(self):
         return self.weather #returns weather object
     
+    def getForecastHighs(self):
+        dateHighs = {}
+        for forecast in self.getForecasts():
+            dateHighs[forecast.date()] = forecast.high()
+        return dateHighs #returns a dictionary
     
+    def getForecastDates(self):
+        dates = []
+        for forecast in self.getForecasts():
+            dates.append(forecast.date())
+        return dates #return a list 
